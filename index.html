@@ -22,24 +22,55 @@
     </div>
 
     <div class="main">
+
+        <!-- Tabs -->
         <div class="tabs">
             <button class="active">Today</button>
             <button>Pending</button>
             <button class="overdue_button">Overdue</button>
         </div>
+
+        <!-- Task Section -->
+        <div class="task-section">
+
+            <!-- Header -->
+            <div class="task-header">
+                <h2>Tasks</h2>
+                <button class="add-btn">+ Add Task</button>
+            </div>
+
+            <div class="task-list">
+                 <!-- Here All the task will be displayed -->
+            </div>
+
+            <!-- Task Card -->
+            <!-- <div class="task">
+                <input type="checkbox">
+                <span class="taskName">Draft Project Proposal</span>
+                <span class="date">◴ Thurs 26 March 2026</span>
+                <button class="edit">🖊</button>
+                <span class="priority high"></span>
+            </div> -->
+
+        </div>
+
     </div>
-    <div class="task-header">
-        <h2>
-            Tasks
-        </h2>
-        <button class="add-btn"> + Add Task</button>
-    </div>
-    <div class="task">
-            <input type="checkbox">
-            <span class="taskName">Draft Project Proposal</span>
-            <span class="date">Thurs 26 March 2026</span>
-            <button class="edit">🖊</button>
-            <span class="priority high"></span>
+    <div class="modal hidden">
+        <div class="class-content">
+            <h3>
+                Add Task
+            </h3>
+            <input type="text" id="taskNameInput" placeholder="TasK Name">
+
+            <input type="time" id="taskTime">
+
+            <select name="priority" id="prioritySelect">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="saveTask">Add</button>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
