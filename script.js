@@ -1,10 +1,12 @@
 const addBtn = document.querySelector(".add-btn");
 const modal = document.querySelector(".modal");
 const saveBtn = document.getElementById("saveTask");
-const list = document.querySelector(".task-list")
+const list = document.querySelector(".task-list");
+const app = document.querySelector(".app");
 
 addBtn.addEventListener("click", () => {
-    modal.classList.remove("hidden")
+    modal.classList.remove("hidden");
+    app.classList.add("blur");
 });
 
 saveBtn.addEventListener("click", () => {
@@ -26,8 +28,11 @@ saveBtn.addEventListener("click", () => {
     <button class ="edit">🖊</button>
     <span class = "priority ${priority}"></span>
     `;
+    app.classList.remove("blur");
 
     list.appendChild(task);
 
     modal.classList.add("hidden");
 });
+
+

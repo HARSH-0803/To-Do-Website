@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div>
+    <div class="app">
+        <div>
         <nav>
             <div>
                 <img class="image" src="./Assests/Leaves image - 2.png" alt="leaf image">
@@ -55,20 +56,25 @@
         </div>
 
     </div>
+    </div>
     <div class="modal hidden">
         <div class="class-content">
             <h3>
                 Add Task
             </h3>
-            <input type="text" id="taskNameInput" placeholder="TasK Name">
+            <label for="taskNameInput">Enter the Task :</label>
+            <input type="text" id="taskNameInput" placeholder="Task Name">
 
+            <label for="taskTime">Set the Time :</label>
             <input type="time" id="taskTime">
 
+            <label for="prioritySelect">Set the Priority :</label>
             <select name="priority" id="prioritySelect">
                 <option value="high">High</option>
                 <option value="medium">Medium</option>
                 <option value="low">Low</option>
             </select>
+            <label for="saveTask">Add the task in the list :</label>
             <button id="saveTask">Add</button>
         </div>
     </div>
