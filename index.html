@@ -11,41 +11,41 @@
 <body>
     <div class="app">
         <div>
-        <nav>
-            <div>
-                <img class="image" src="./Assests/Leaves image - 2.png" alt="leaf image">
-            </div>
-            <div class="overlay"></div>
-            <h1>
-                Todo App
-            </h1>
-        </nav>
-    </div>
-
-    <div class="main">
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="active">Today</button>
-            <button>Pending</button>
-            <button class="overdue_button">Overdue</button>
+            <nav>
+                <div>
+                    <img class="image" src="./Assests/Leaves image - 2.png" alt="leaf image">
+                </div>
+                <div class="overlay"></div>
+                <h1>
+                    Todo App
+                </h1>
+            </nav>
         </div>
 
-        <!-- Task Section -->
-        <div class="task-section">
+        <div class="main">
 
-            <!-- Header -->
-            <div class="task-header">
-                <h2>Tasks</h2>
-                <button class="add-btn">+ Add Task</button>
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="active">Today</button>
+                <button>Pending</button>
+                <button class="overdue_button">Overdue</button>
             </div>
 
-            <div class="task-list">
-                 <!-- Here All the task will be displayed -->
-            </div>
+            <!-- Task Section -->
+            <div class="task-section">
 
-            <!-- Task Card -->
-            <!-- <div class="task">
+                <!-- Header -->
+                <div class="task-header">
+                    <h2>Tasks</h2>
+                    <button class="add-btn">+ Add Task</button>
+                </div>
+
+                <div class="task-list">
+                    <!-- Here All the task will be displayed -->
+                </div>
+
+                <!-- Task Card -->
+                <!-- <div class="task">
                 <input type="checkbox">
                 <span class="taskName">Draft Project Proposal</span>
                 <span class="date">◴ Thurs 26 March 2026</span>
@@ -53,29 +53,36 @@
                 <span class="priority high"></span>
             </div> -->
 
-        </div>
+            </div>
 
-    </div>
+        </div>
     </div>
     <div class="modal hidden">
         <div class="class-content">
             <h3>
                 Add Task
             </h3>
-            <label for="taskNameInput">Enter the Task :</label>
-            <input type="text" id="taskNameInput" placeholder="Task Name">
+            <div class="field">
+                <label for="taskNameInput">Enter the Task :</label>
+                <input type="text" id="taskNameInput" placeholder="Task Name">
+            </div>
 
-            <label for="taskTime">Set the Time :</label>
-            <input type="time" id="taskTime">
+            <div class="field">
+                <label for="taskTime">Set the Time :</label>
+                <input type="time" id="taskTime">
+            </div>
 
-            <label for="prioritySelect">Set the Priority :</label>
-            <select name="priority" id="prioritySelect">
-                <option value="high">High</option>
-                <option value="medium">Medium</option>
-                <option value="low">Low</option>
-            </select>
-            <label for="saveTask">Add the task in the list :</label>
-            <button id="saveTask">Add</button>
+            <div class="field">
+                <label for="prioritySelect">Set the Priority :</label>
+                <select name="priority" id="prioritySelect">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="field"><label for="saveTask">Add the task in the list :</label>
+                <button id="saveTask" style="border-radius: 50px  ; padding: 0.5rem;">Click Here</button>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
