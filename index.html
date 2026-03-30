@@ -25,10 +25,11 @@
         <div class="main">
 
             <!-- Tabs -->
+            <!--  Data filter is a custom attribute used to store data in the HTML -->
             <div class="tabs">
-                <button class="active">Today</button>
-                <button>Pending</button>
-                <button class="overdue_button">Overdue</button>
+                <button class="tab active-btn" data-filter="all">All</button>
+                <button class="tab" data-filter="pending">Pending</button>
+                <button class="tab" data-filter="completed">Completed</button>
             </div>
 
             <!-- Task Section -->
@@ -37,7 +38,10 @@
                 <!-- Header -->
                 <div class="task-header">
                     <h2>Tasks</h2>
-                    <button class="add-btn">+ Add Task</button>
+                    <div class="actions">
+                        <button class="add-btn">+ Add Task</button>
+                        <button id="downloadPDF">Download Tasks</button>
+                    </div>
                 </div>
 
                 <div class="task-list">
@@ -58,12 +62,12 @@
         </div>
     </div>
     <div class="modal hidden">
-        <div class="class-content">
+        <div class="modal-content">
             <h3>
                 Add Task
             </h3>
             <div class="field">
-                <label for="taskNameInput">Enter the Task :</label>
+                <label for="taskNameInput">Enter the Task : </label>
                 <input type="text" id="taskNameInput" placeholder="Task Name">
             </div>
 
@@ -86,6 +90,7 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 
 </html>
