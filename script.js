@@ -6,7 +6,6 @@ const app = document.querySelector(".app");
 
 addBtn.addEventListener("click", () => {
     modal.classList.remove("hidden");
-    app.classList.add("blur");
 });
 
 function formatTime(time) {
@@ -66,8 +65,7 @@ saveBtn.addEventListener("click", () => {
             taskText.innerText = newTask;
         }
     });
-    app.classList.remove("blur");
-
+    
     list.appendChild(task);
 
     modal.classList.add("hidden");
