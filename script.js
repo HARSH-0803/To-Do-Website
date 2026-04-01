@@ -11,11 +11,11 @@ addBtn.addEventListener("click", () => {
 function formatTime(time) {
     let [hours, minute] = time.split(":");
     hours = parseInt(hours);
-
+    
     let ampm = hours >= 12 ? "PM" : "AM";
 
     hours = hours % 12;
-    hours = hours ? hours : 12;
+    hours = hours ? hours : 12;   //.
 
     return `${hours}:${minute} ${ampm}`;
 }
