@@ -143,7 +143,7 @@ downloadBtn.addEventListener("click", () => {
         else if (priorityEl.classList.contains("low")) priority = "Low";
 
         const status = task.classList.contains("completed-task")
-            ? "Complete"
+            ? "Completed"
             : "Pending";
 
         doc.setFont("helvetica", "normal");
